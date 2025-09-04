@@ -16,6 +16,7 @@ for region in regions:
             data = all_data["data"]["segments"]
             df = pd.DataFrame(data)
             df.to_csv(f"{region}stats.csv") # creates csv file for each region
+            time.sleep(0.5)
         
 
 
